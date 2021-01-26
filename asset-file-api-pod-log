@@ -1,0 +1,21 @@
+[2021-01-21T16:39:17.962] [DEBUG] [v2-put-asset-controller] Landing file to temp upload path:  /mnt/asset_file_api/upload_fdca157c6dbb32c0afaaa1eac448c8f8
+[2021-01-21T16:39:17.963] [DEBUG] [v2-put-asset-controller] Starting PUT operation. {ensure_dir: undefined, inflate: undefined}
+[2021-01-21T16:39:17.966] [ERROR] [application     ] Uncaught exception encountered:
+[2021-01-21T16:39:17.967] [FATAL] [application     ] Error: ENOSPC: no space left on device, close
+[2021-01-21T16:39:17.967] [ERROR] [application     ] Process terminated.
+[2021-01-21T16:39:17.967] [DEBUG] [v2-put-asset-controller] Validated root path exists, duration: (5 ms)
+[2021-01-21T16:39:17.970] [DEBUG] [v2-put-asset-controller] Validated asset path directory exists, duration: (8 ms)
+[2021-01-21T16:39:17.974] [DEBUG] [v2-put-asset-controller] Completed move operation or file, duration: (12 ms)
+[2021-01-21T16:39:17.975] [DEBUG] [v2-put-asset-controller] PUT operation completed! duration: (13 ms)
+[2021-01-21T16:39:17.976] [ERROR] [v2-put-asset-controller] {
+  code: 500,
+  error: 'Internal Server Error',
+  reason: 'Failed to move file into project/catalog',
+  message: 'The API encountered an unexpected condition which prevented it from fulfilling the request.'
+}
+[2021-01-21T16:39:17.977] [ERROR] [incoming-request] [500] PUT /v2/asset_files/auto_ml%2F05797a58-3281-486f-a078-d35a30db37ff%2Fattachments%2Fconfig_05797a58-3281-486f-a078-d35a30db37ff?project_id=c768ce22-f063-497f-b798-9c6d1ad3855a (108 ms)
+[2021-01-21T16:39:22.969] [ERROR] [application     ] Timeout exceeded (5000 ms). Process will terminate now.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! asset-files-api@2.0.0 start: `node --max-old-space-size=2048 --max-http-header-size=32768 index.js`
+npm ERR! Exit status 1
